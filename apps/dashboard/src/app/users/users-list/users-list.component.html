@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-title>
+    Users
+  </mat-card-title>
+  <mat-card-content>
+    <mat-list data-cy="users-list">
+      <mat-list-item
+        *ngFor="let user of users"
+        attr.data-cy="user-{{ user.id }}-item"
+        class="mat-list-option"
+        (click)="selected.emit(user)"
+        data-cy="list-item">
+        <span matLine attr.data-cy="user-{{ user.id }}-item-title">{{ user.firstName }} {{ user.lastName }}</span>
+        <button
+          *ngIf="!readonly"
+          attr.data-cy="delete-user-{{ user.id }}-btn"
+          mat-icon-button
+          type="button"
+          color="warn"
+          (click)="deleted.emit(user); $event.stopImmediatePropagation()">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

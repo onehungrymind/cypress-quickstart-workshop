@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>
+    <button
+      *ngIf="isAuthenticated && sidenavEnabled"
+      (click)="toggleSidenav.emit()"
+      data-cy="toggle-btn"
+      mat-mini-fab
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">
+      {{ title }}
+    </span>
+  </span>
+  <span class="spacer"></span>
+  <button class="login"
+    data-cy="login-btn"
+    *ngIf="isAuthenticated"
+    (click)="logout.emit($event)"
+    mat-mini-fab
+  >
+    <mat-icon>person</mat-icon>
+  </button>
+</mat-toolbar>

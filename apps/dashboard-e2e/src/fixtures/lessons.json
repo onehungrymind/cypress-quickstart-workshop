@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e138253f-d1ca-43e6-ae3c-9c3ab3442f6c",
+    "title": "Welcome to Angular Fundamentals",
+    "description": "Pending",
+    "videoUri": "",
+    "courseId": "6f311656-f8d6-407f-94c6-2bea0c4e5399"
+  },
+  {
+    "id": "7d4a5840-eb0b-44cb-b25f-b91b211a1cba",
+    "title": "Welcome to RxJS Quickstart",
+    "description": "Pending.",
+    "videoUri": "",
+    "courseId": "e358e4b1-7012-4353-9cf9-634e47ea787e"
+  },
+  {
+    "id": "eba2dae0-d463-478c-be20-3817cde64e76",
+    "title": "Welcome to Ionic Quickstart",
+    "description": "Pending.",
+    "videoUri": "",
+    "courseId": "3dca6bc9-397f-4062-ae8d-319d36144b82"
+  }
+]

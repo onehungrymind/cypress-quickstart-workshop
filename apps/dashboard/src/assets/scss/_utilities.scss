@@ -1,0 +1,45 @@
+.d-flex {
+  display: flex !important;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.w-100 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+$spacer: 1; // double check bootstrap base amount
+$spaceamounts: (0, .25, .5, $spacer, 1.5, 3);
+$sides: (top, bottom, left, right);
+
+
+@each $amount in $spaceamounts {
+  $i: index($spaceamounts, $amount) - 1; // not 0 index'd
+  @each $side in $sides {
+    // Margin
+    .m#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: #{$spacer * $amount}rem !important;
+    }
+    // Padding
+    .p#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: #{$spacer * $amount}rem !important;
+    }
+  }
+}

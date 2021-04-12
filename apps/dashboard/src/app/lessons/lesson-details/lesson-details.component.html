@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-card-title data-cy="lesson-details-title">
+    <span *ngIf="currentLesson.id; else elseBlock">
+      Editing {{ originalTitle }}
+    </span>
+    <ng-template #elseBlock>
+      Select Lesson
+    </ng-template>
+  </mat-card-title>
+  <form #form="ngForm" (submit)="saved.emit(currentLesson)" data-cy="lesson-form">
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Title"
+          data-cy="lesson-form-title"
+          [(ngModel)]="currentLesson.title"
+          type="text"
+          name="title"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Description"
+          data-cy="lesson-form-description"
+          [(ngModel)]="currentLesson.description"
+          type="text"
+          name="description"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Select a Course</mat-label>
+        <mat-select
+          [(ngModel)]="currentLesson.courseId"
+          data-cy="lesson-form-course"
+          required="false"
+          name="courseId">
+          <mat-option *ngFor="let course of courses" [value]="course.id">
+            {{course.title}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="form.invalid" type="submit" mat-button color="primary" data-cy="lesson-form-save">Save</button>
+      <button type="button" mat-button (click)="form.reset();cancelled.emit()" data-cy="lesson-form-cancel">
+        Cancel
+      </button>
+    </mat-card-actions>
+  </form>
+</mat-card>

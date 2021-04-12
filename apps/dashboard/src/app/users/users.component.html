@@ -1,0 +1,14 @@
+<div class="component-container">
+  <div class="list-component">
+    <workshop-users-list [users]="users$ | async"
+      (selected)="selectUser($event)"
+      (deleted)="deleteUser($event)">
+    </workshop-users-list>
+  </div>
+  <div class="details-component">
+    <workshop-user-details [user]="selectedUser$ | async"
+      (saved)="saveUser($event)"
+      (cancelled)="resetForm()">
+    </workshop-user-details>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<mat-card>
+  <mat-card-title data-cy="user-details-title">
+    <span *ngIf="currentUser.id; else elseBlock">
+      Editing {{ originalTitle }}
+    </span>
+    <ng-template #elseBlock>
+      Select User
+    </ng-template>
+  </mat-card-title>
+  <form #form="ngForm" (submit)="saved.emit(currentUser)" data-cy="user-form">
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Title"
+          data-cy="user-form-title"
+          [(ngModel)]="currentUser.title"
+          type="text"
+          name="title"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="First Name"
+          data-cy="user-form-firstName"
+          [(ngModel)]="currentUser.firstName"
+          type="text"
+          name="firstName"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Last Name"
+          data-cy="user-form-lastName"
+          [(ngModel)]="currentUser.lastName"
+          type="text"
+          name="lastName"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Email"
+          data-cy="user-form-email"
+          [(ngModel)]="currentUser.email"
+          type="text"
+          name="email"
+          required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input
+          matInput
+          placeholder="Password"
+          data-cy="user-form-password"
+          [(ngModel)]="currentUser.password"
+          type="text"
+          name="password"
+          required />
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="form.invalid" type="submit" mat-button color="primary" data-cy="user-form-save">Save</button>
+      <button type="button" mat-button (click)="form.reset();cancelled.emit()" data-cy="user-form-cancel">
+        Cancel
+      </button>
+    </mat-card-actions>
+  </form>
+</mat-card>

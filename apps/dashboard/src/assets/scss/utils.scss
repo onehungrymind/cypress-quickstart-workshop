@@ -1,0 +1,17 @@
+.flex {
+  display: flex !important;
+
+  &--column {
+    @extend .flex;
+    flex-direction: column;
+  }
+}
+
+.justify-content-between {
+  @extend .flex;
+  justify-content: space-between;
+}
+
+.clickable {
+  cursor: pointer;
+}

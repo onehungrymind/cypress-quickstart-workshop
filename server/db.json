@@ -1,0 +1,118 @@
+{
+  "authors": [
+    {
+      "id": "f0217466-1ad8-4919-876a-0fed8d102145",
+      "title": "CEO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices mi congue, tempus purus ac, commodo massa. Donec mattis, ipsum in venenatis hendrerit, dui sapien varius libero, sit amet auctor massa odio a est. ",
+      "firstName": "John",
+      "lastName": "Doe",
+      "profilePic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+    },
+    {
+      "id": "1ffabd78-595f-46ba-8e7a-25326f54bc0d",
+      "title": "VP of Operations",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices mi congue, tempus purus ac, commodo massa. Donec mattis, ipsum in venenatis hendrerit, dui sapien varius libero, sit amet auctor massa odio a est.",
+      "firstName": "Anna",
+      "lastName": "Mull",
+      "profilePic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+    },
+    {
+      "id": "359aacf3-33e9-421a-93bd-4a8a94ac8d72",
+      "title": "Senior Architect",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices mi congue, tempus purus ac, commodo massa. Donec mattis, ipsum in venenatis hendrerit, dui sapien varius libero, sit amet auctor massa odio a est.",
+      "firstName": "Paige",
+      "lastName": "Turner",
+      "profilePic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+    }
+  ],
+  "courses": [
+    {
+      "id": "6f311656-f8d6-407f-94c6-2bea0c4e5399",
+      "title": "Angular Fundamentals",
+      "description": "Pending",
+      "thumbnail": "/assets/images/course-card-default.png",
+      "authorId": "1ffabd78-595f-46ba-8e7a-25326f54bc0d"
+    },
+    {
+      "id": "e358e4b1-7012-4353-9cf9-634e47ea787e",
+      "title": "RxJS Quickstart",
+      "description": "Pending.",
+      "thumbnail": "/assets/images/course-card-default.png",
+      "authorId": "359aacf3-33e9-421a-93bd-4a8a94ac8d72"
+    },
+    {
+      "id": "3dca6bc9-397f-4062-ae8d-319d36144b82",
+      "title": "Ionic Quickstart",
+      "description": "Pending.",
+      "thumbnail": "/assets/images/course-card-default.png",
+      "authorId": "f0217466-1ad8-4919-876a-0fed8d102145"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e138253f-d1ca-43e6-ae3c-9c3ab3442f6c",
+      "title": "Welcome to Angular Fundamentals",
+      "description": "Pending",
+      "videoUri": "",
+      "courseId": "6f311656-f8d6-407f-94c6-2bea0c4e5399"
+    },
+    {
+      "id": "7d4a5840-eb0b-44cb-b25f-b91b211a1cba",
+      "title": "Welcome to RxJS Quickstart",
+      "description": "Pending.",
+      "videoUri": "",
+      "courseId": "e358e4b1-7012-4353-9cf9-634e47ea787e"
+    },
+    {
+      "id": "eba2dae0-d463-478c-be20-3817cde64e76",
+      "title": "Welcome to Ionic Quickstart",
+      "description": "Pending.",
+      "videoUri": "",
+      "courseId": "3dca6bc9-397f-4062-ae8d-319d36144b82"
+    }
+  ],
+  "users": [
+    {
+      "id": "21c89f40-b0fb-4aa6-8e88-376b4edfd6ba",
+      "title": "Intern",
+      "role": "user",
+      "description": "Pending",
+      "firstName": "Frank",
+      "lastName": "Hills",
+      "email": "user@gmail.com",
+      "password": "insecure",
+      "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/baires/128.jpg",
+      "currentLessonId": "7d4a5840-eb0b-44cb-b25f-b91b211a1cba",
+      "coursesCompleted": 2,
+      "lessonsCompleted": 20
+    },
+    {
+      "id": "ceb6569f-e499-4b94-84aa-ecbcf972af5e",
+      "title": "Engineering Manager",
+      "role": "manager",
+      "description": "Pending.",
+      "firstName": "Jones",
+      "lastName": "Smith",
+      "email": "manager@gmail.com",
+      "password": "insecure",
+      "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/teeragit/128.jpg",
+      "currentLessonId": "eba2dae0-d463-478c-be20-3817cde64e76",
+      "coursesCompleted": 4,
+      "lessonsCompleted": 20
+    },
+    {
+      "id": "51f60f15-67a5-4c21-a417-f51e940b89b1",
+      "title": "Enterprise Developer",
+      "role": "admin",
+      "description": "Pending.",
+      "firstName": "Clark",
+      "lastName": "Baker",
+      "email": "admin@gmail.com",
+      "password": "insecure",
+      "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/meelford/128.jpg",
+      "currentLessonId": "e138253f-d1ca-43e6-ae3c-9c3ab3442f6c",
+      "coursesCompleted": 2,
+      "lessonsCompleted": 20
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "21c89f40-b0fb-4aa6-8e88-376b4edfd6ba",
+    "title": "Intern",
+    "role": "user",
+    "description": "Pending",
+    "firstName": "Frank",
+    "lastName": "Hills",
+    "email": "user@gmail.com",
+    "password": "insecure",
+    "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/baires/128.jpg",
+    "currentLessonId": "7d4a5840-eb0b-44cb-b25f-b91b211a1cba",
+    "coursesCompleted": 2,
+    "lessonsCompleted": 20
+  },
+  {
+    "id": "ceb6569f-e499-4b94-84aa-ecbcf972af5e",
+    "title": "Engineering Manager",
+    "role": "manager",
+    "description": "Pending.",
+    "firstName": "Jones",
+    "lastName": "Smith",
+    "email": "manager@gmail.com",
+    "password": "insecure",
+    "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/teeragit/128.jpg",
+    "currentLessonId": "eba2dae0-d463-478c-be20-3817cde64e76",
+    "coursesCompleted": 4,
+    "lessonsCompleted": 20
+  },
+  {
+    "id": "51f60f15-67a5-4c21-a417-f51e940b89b1",
+    "title": "Enterprise Developer",
+    "role": "admin",
+    "description": "Pending.",
+    "firstName": "Clark",
+    "lastName": "Baker",
+    "email": "admin@gmail.com",
+    "password": "insecure",
+    "profilePic": "https://s3.amazonaws.com/uifaces/faces/twitter/meelford/128.jpg",
+    "currentLessonId": "e138253f-d1ca-43e6-ae3c-9c3ab3442f6c",
+    "coursesCompleted": 2,
+    "lessonsCompleted": 20
+  }
+]

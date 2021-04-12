@@ -1,0 +1,23 @@
+[
+  {
+    "id": "6f311656-f8d6-407f-94c6-2bea0c4e5399",
+    "title": "Angular Fundamentals",
+    "description": "Pending",
+    "thumbnail": "/assets/images/course-card-default.png",
+    "authorId": "1ffabd78-595f-46ba-8e7a-25326f54bc0d"
+  },
+  {
+    "id": "e358e4b1-7012-4353-9cf9-634e47ea787e",
+    "title": "RxJS Quickstart",
+    "description": "Pending.",
+    "thumbnail": "/assets/images/course-card-default.png",
+    "authorId": "359aacf3-33e9-421a-93bd-4a8a94ac8d72"
+  },
+  {
+    "id": "3dca6bc9-397f-4062-ae8d-319d36144b82",
+    "title": "Ionic Quickstart",
+    "description": "Pending.",
+    "thumbnail": "/assets/images/course-card-default.png",
+    "authorId": "f0217466-1ad8-4919-876a-0fed8d102145"
+  }
+]

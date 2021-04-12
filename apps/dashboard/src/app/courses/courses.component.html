@@ -1,0 +1,14 @@
+<div class="component-container">
+  <div class="list-component">
+    <workshop-courses-list [courses]="courses$ | async"
+      (selected)="selectCourse($event)"
+      (deleted)="deleteCourse($event)">
+    </workshop-courses-list>
+  </div>
+  <div class="details-component">
+    <workshop-course-details [course]="selectedCourse$ | async"
+      (saved)="saveCourse($event)"
+      (cancelled)="resetForm()">
+    </workshop-course-details>
+  </div>
+</div>

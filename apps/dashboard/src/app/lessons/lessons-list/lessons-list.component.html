@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-title>
+    Lessons
+  </mat-card-title>
+  <mat-card-content>
+    <mat-list data-cy="lessons-list">
+      <mat-list-item
+        *ngFor="let lesson of lessons"
+        attr.data-cy="lesson-{{ lesson.id }}-item"
+        class="mat-list-option"
+        (click)="selected.emit(lesson)"
+        data-cy="list-item">
+        <span matLine attr.data-cy="lesson-{{ lesson.id }}-item-title">{{ lesson.title }}</span>
+        <button
+          *ngIf="!readonly"
+          attr.data-cy="delete-lesson-{{ lesson.id }}-btn"
+          mat-icon-button
+          type="button"
+          color="warn"
+          (click)="deleted.emit(lesson); $event.stopImmediatePropagation()">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
